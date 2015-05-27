@@ -1,0 +1,29 @@
+{
+  "name": "wake/Twig-Assetic-Fixer",
+  "description": "Fixes the issue that `debug mode` & `combine false` not work when using Twig with Assetic.",
+  "version": "v1.0.0",
+  "type": "library",
+  "keywords": ["twig", "assetic"],
+  "homepage": "https://github.com/wake/Twig-Assetic-Fixer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Wake Liu",
+      "email": "wake.gs@gmail.com",
+      "homepage": "http://wake.gs"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/wake/Twig-Assetic-Fixer/issues",
+    "source": "https://github.com/wake/Twig-Assetic-Fixer"
+  },
+  "require": {
+      "kriswallsmith/assetic": "~1.3",
+      "twig/twig": "~1.*"
+  },
+  "autoload": {
+      "psr-0": {
+          "Assetic": "src/" 
+      }
+  }
+}
