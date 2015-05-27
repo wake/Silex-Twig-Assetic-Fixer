@@ -1,5 +1,5 @@
 {
-  "name": "wake/Twig-Assetic-Fixer",
+  "name": "wake/twig-assetic-fixer",
   "description": "Fixes the issue that `debug mode` & `combine false` not work when using Twig with Assetic.",
   "version": "v1.0.0",
   "type": "library",
