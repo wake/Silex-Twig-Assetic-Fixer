@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Assetic\Extension\Twig;
+namespace TwigAsseticFixer;
 
 use Assetic\Factory\Loader\FormulaLoaderInterface;
 use Assetic\Factory\Resource\ResourceInterface;
