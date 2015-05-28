@@ -15,6 +15,9 @@ use Assetic\Factory\Loader\FormulaLoaderInterface;
 use Assetic\Factory\Resource\ResourceInterface;
 use Psr\Log\LoggerInterface;
 
+use Assetic\Extension\Twig\AsseticNode;
+use Assetic\Extension\Twig\AsseticFilterFunction;
+
 /**
  * Loads asset formulae from Twig templates.
  *
