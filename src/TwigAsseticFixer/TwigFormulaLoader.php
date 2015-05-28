@@ -23,7 +23,7 @@ use Assetic\Extension\Twig\AsseticFilterFunction;
  *
  * @author Kris Wallsmith <kris.wallsmith@gmail.com>
  */
-class TwigFormulaFixerLoader implements FormulaLoaderInterface
+class TwigFormulaLoader implements FormulaLoaderInterface
 {
     private $twig;
     private $logger;

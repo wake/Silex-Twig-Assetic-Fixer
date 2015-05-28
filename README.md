@@ -14,14 +14,16 @@
 
 ### 使用
 
-參考 [Assetic#Twig](https://github.com/kriswallsmith/assetic#twig)，最下方有提到 `These assets need to be written to the web directory so these URLs don't return 404 errors.`，請將原本 `TwigFormulaLoader` 的部份更改為 `TwigFormulaFixerLoader`。
+參考 [Assetic#Twig](https://github.com/kriswallsmith/assetic#twig)，最下方有提到 `These assets need to be written to the web directory so these URLs don't return 404 errors.`，請將原本
 
 ``` php
-use TwigAsseticFixer\TwigFormulaFixerLoader;
+use Assetic\Extension\Twig\TwigFormulaLoader;
 ```
 
+改換成
+
 ``` php
-$am->setLoader('twig', new TwigFormulaFixerLoader($twig));
+use TwigAsseticFixer\TwigFormulaLoader;
 ```
 
 ### 回報
