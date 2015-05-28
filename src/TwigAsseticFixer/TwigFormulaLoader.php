@@ -27,11 +27,16 @@ class TwigFormulaLoader implements FormulaLoaderInterface
 {
     private $twig;
     private $logger;
+    private $debug;
 
     public function __construct(\Twig_Environment $twig, LoggerInterface $logger = null)
     {
         $this->twig = $twig;
         $this->logger = $logger;
+
+        $globals = $twig->getExtension('assetic')->getGlobals ();
+
+        $this->debug = $globals['assetic']['debug'];
     }
 
     public function load(ResourceInterface $resource)
@@ -116,7 +121,7 @@ class TwigFormulaLoader implements FormulaLoaderInterface
 
             list ($inputs, $filters, $options) = $f;
 
-            if (($options['debug'] === true || $options['combine'] === false) && count($inputs) > 1) {
+            if (($this->debug === true || $options['debug'] === true || $options['combine'] === false) && count($inputs) > 1) {
 
                 $path = pathinfo ($options['output']);
                 $counter = 1;
