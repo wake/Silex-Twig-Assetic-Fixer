@@ -121,7 +121,11 @@ class TwigFormulaLoader implements FormulaLoaderInterface
 
             list ($inputs, $filters, $options) = $f;
 
-            if (($this->debug === true || $options['debug'] === true || $options['combine'] === false) && count($inputs) > 1) {
+            // 當沒有資源或此資源已被解開過的時候
+            if (count($inputs) > 0 && strlen ($n) <= 7
+
+                && ($this->debug === true || $options['debug'] === true || $options['combine'] === false)) {
+
 
                 $path = pathinfo ($options['output']);
                 $counter = 1;
