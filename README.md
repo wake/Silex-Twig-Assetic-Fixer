@@ -1,6 +1,6 @@
 # Twig Assetic Fixer
 
-Twig-Assetic-Fixer try to fix the issue: `debug = true`, `combine = false` options not work, the asset files always combined when using [Twig](http://twig.sensiolabs.org/) with [Assetic](https://github.com/kriswallsmith/assetic).
+Twig-Assetic-Fixer try to fix the issue: The `debug = true`, `combine = false` options not work and asset files always combined when using [Twig](http://twig.sensiolabs.org/) with [Assetic](https://github.com/kriswallsmith/assetic).
 
 
 ### Install
